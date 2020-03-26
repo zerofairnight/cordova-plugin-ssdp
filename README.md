@@ -30,12 +30,5 @@ A cordova plugin to get SSDP services on a local network
     // urn:schemas-upnp-org:device:LocalService:1
     var service = 'ssdp:all';
 
-    /**
-     * Discover the specified network services.
-     *
-     * @param {String} service
-     * @param {function(array): void} success
-     * @param {function(any): void} failure
-     */
     cordova.plugins.ssdp.getNetworkServices(service, success, failure);
 ```
