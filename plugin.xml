@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-ssdp" version="1.0.0">
+
+    <name>Simple Service Discovery Protocol</name>
+    <description>Cordova Simple Service Discovery Protocol plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,ssdp,discovery</keywords>
+
+	<engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <js-module name="ssdp" src="www/ssdp.js">
+        <clobbers target="cordova.plugins.ssdp" />
+    </js-module>
+
+    <platform name="android">
+        <source-file src="src/android/SSDP.java" target-dir="src/io/zero/cordova/ssdp" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SSDP">
+                <param name="android-package" value="io.zero.cordova.ssdp.SSDP" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+    </platform>
+
+</plugin>

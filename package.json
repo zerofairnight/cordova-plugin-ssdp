@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-ssdp",
+  "version": "0.2.0",
+  "description": "Cordova Simple Service Discovery Protocol plugin",
+  "cordova": {
+    "id": "cordova-plugin-ssdp",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerofairnight/cordova-plugin-ssdp"
+  },
+  "keywords": [
+    "cordova",
+    "ssdp",
+    "discovery"
+  ],
+  "author": "zerofairnight <zerofairnight@gmail.com>",
+  "license": "MIT"
+}
